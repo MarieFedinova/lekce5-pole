@@ -5,14 +5,16 @@
 
 // Úkol 1 - Založ nové pole se seznamem jmen (alespoň 5)
 // Vypiš jeho obsah do stránky - JavaScript spojí pole automaticky do řetězce
-
+let jmena = ['Jana', 'Erika', 'Adéla', 'Markéta', 'Linda'];
+vypisText(jmena);
 
 
 
 
 // Úkol 2 - Vypiš třetí jméno v pořadí
 // Nezapomeň, že pole se čísluje od 0
-
+let tretiJmeno = jmena[2];
+console.log(tretiJmeno);
 
 
 
@@ -20,7 +22,8 @@
 
 // Úkol 3 - Kolik jmen je v poli?
 // Pole má vlastnost pole.length
-
+let počet = jmena.length;
+console.log(počet);
 
 
 
@@ -41,7 +44,8 @@
 // pole.push()
 // pole.unshift()
 // Doplněný seznam jmen vypiš (jednoduše jako v příkladu 1)
-
+jmena.push('Lenka');
+console.log(jmena);
 
 
 
@@ -50,7 +54,11 @@
 // obě jména a pak i výsledné pole
 // pole.shift()
 // pole.pop()
-
+let prvni = jmena.shift();
+console.log(prvni);
+let posledni = jmena.pop();
+console.log(posledni);
+console.log(jmena);
 
 
 
